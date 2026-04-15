@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  
+  --color-brand-50: #fef2f2;
+  --color-brand-100: #fee2e2;
+  --color-brand-200: #fecaca;
+  --color-brand-300: #fca5a5;
+  --color-brand-400: #f87171;
+  --color-brand-500: #ef4444;
+  --color-brand-600: #d32f2f;
+  --color-brand-700: #b71c1c;
+  --color-brand-800: #991b1b;
+  --color-brand-900: #7f1d1d;
+  --color-brand-950: #450a0a;
+
+  --color-surface: #f4f7f6;
+  --color-text-main: #2d3436;
+  --color-card-border: #e0e0e0;
+}
+
+@layer base {
+  body {
+    @apply font-sans antialiased bg-surface text-text-main;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-4 py-2 bg-brand-600 text-white rounded-lg font-semibold hover:bg-brand-700 transition-all active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+  
+  .bento-card {
+    @apply bg-white rounded-2xl border border-card-border p-6 flex flex-col shadow-sm transition-all hover:shadow-md;
+  }
+  
+  .input {
+    @apply w-full px-4 py-2 rounded-lg border border-card-border focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition-all bg-white;
+  }
+
+  .tag {
+    @apply px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-gray-100 text-gray-600;
+  }
+}

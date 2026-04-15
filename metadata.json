@@ -1,0 +1,6 @@
+{
+  "name": "SMK Prima Unggul Attendance",
+  "description": "A comprehensive student and employee attendance system for SMK Prima Unggul, featuring role-based access control, real-time updates, and user management.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
